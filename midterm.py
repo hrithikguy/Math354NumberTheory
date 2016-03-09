@@ -113,6 +113,9 @@ def solver(b, m):
 
 #inputs the number of equations
 n = raw_input("How many equations do you want?\n")
+if int(n) <= 0:
+	print "The number of equations has to be positive"
+	quit()
 
 m = []
 a = []
